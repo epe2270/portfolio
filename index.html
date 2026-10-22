@@ -26,6 +26,10 @@
   </head>
 
   <body class="mil-custom-scroll">
+    <div
+      id="particles-bg"
+      class="slide absolute overflow-hidden left-0 top-0 w-full h-full bg-[#262628] bg-no-repeat bg-cover"
+      style="background-image: url(assets/images/bg.jpg); position: fixed; z-index: -1"></div>
     <!-- frame -->
     <div class="mil-frame">
       <!-- top panel -->
@@ -124,8 +128,8 @@
                       <span style="font-weight: 600; margin-right: 20px">철저한 일정 관리</span> 정확한 공수 산정 기반으로 약속된 마감 기한 100% 준수
                     </li>
                     <li>
-                      <span style="font-weight: 600; margin-right: 20px">유연한 협업 소통</span> 기획자·개발자의 언어를 이해하며 매끄러운
-                      커뮤니케이션 리드
+                      <span style="font-weight: 600; margin-right: 20px">유연한 협업 소통</span> 기획자·개발자의 언어를 이해하며 매끄러운 커뮤니케이션
+                      리드
                     </li>
                     <li>
                       <span style="font-weight: 600; margin-right: 20px">웹 표준 및 접근성</span> SCSS 모듈화와 웹 접근성을 준수하여 고품질 퍼블리싱
@@ -471,5 +475,21 @@
 
     <!-- hworks js -->
     <script src="js/main.js"></script>
+    <!-- 파티클 JS 로드 및 실행 -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-bg", {
+        "particles": {
+          "number": { "value": 80 },
+          "color": { "value": "#ffffff" },
+          "shape": { "type": "circle" },
+          "size": { "value": 3 },
+          "move": { "enable": true, "speed": 2 }
+        },
+        "interactivity": {
+          "events": { "onhover": { "enable": true, "mode": "repulse" } }
+        }
+      });
+    </script>
   </body>
 </html>
