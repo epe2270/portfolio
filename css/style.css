@@ -246,6 +246,9 @@ h4 {
   margin-bottom: 10px;
   color: #5f5f5f;
 }
+.mil-text-list li span{
+ width:140px;
+}
 .mil-text-list li:before {
   content: "";
   display: block;
