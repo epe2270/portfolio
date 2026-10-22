@@ -477,22 +477,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
 
-    <script>
-      VANTA.FOG({
+<script>
+      VANTA.TOPOLOGY({
         el: "#particles-bg",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        highlightColor: 0xffffff,
-        midtoneColor: 0xffffff,
-        lowlightColor: 0x5f5f5f,
-        baseColor: 0xffffff,
-        blurFactor: 0.85,
-        speed: 0.6,
-        zoom: 2.0,
-      });
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x09eab3,       // 민트색 포인트 컬러
+        backgroundColor: 0xffffff // 깨끗한 흰색 배경
+      })
     </script>
   </body>
 </html>
