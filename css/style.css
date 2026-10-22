@@ -1040,7 +1040,7 @@ top panel
     border: none;
     position: absolute;
     background-color: rgb(255, 255, 255);
-    top: 90px;
+    top: 80px;
     width: 100%;
     border-bottom: solid 2px rgba(16, 16, 16, 0.18);
     transform: scale(0.9) translateY(-5px);
