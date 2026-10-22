@@ -472,60 +472,29 @@
 
     <!-- hworks js -->
     <script src="js/main.js"></script>
-    <!-- 여기서부터 파티클 JS 추가 -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+ <!-- 1. Three.js 로드 (필수) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    
+    <!-- 2. Vanta.js 효과 로드 (원하는 효과에 맞춰 파일명 변경 가능) -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+    <!-- 3. 효과 실행 -->
     <script>
-      particlesJS("particles-bg", {
-        particles: {
-          number: {
-            value: 60,
-          },
-          color: {
-            value: "#16db93",
-          },
-          shape: {
-            type: "circle",
-          },
-          opacity: {
-            value: 0.5,
-            random: true,
-          },
-          size: {
-            value: 3,
-            random: true,
-          },
-          line_linked: {
-            enable: true /* 핵심: 선 연결 켜기 (false -> true) */,
-            distance: 150 /* 선이 연결되는 점들 사이의 최대 거리 */,
-            color: "#16db93" /* 선 색상 (민트색) */,
-            opacity: 0.4 /* 선의 투명도 */,
-            width: 1 /* 선의 두께 */,
-          },
-          move: {
-            enable: true,
-            speed: 1.5,
-          },
-        },
-        interactivity: {
-          detect_on: "window",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "repulse",
-            },
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-          },
-          modes: {
-            repulse: {
-              distance: 80,
-              duration: 0.4,
-            },
-          },
-        },
-      });
+      VANTA.FOG({
+        el: "#particles-bg", // 기존에 쓰던 전체화면 배경 div의 id
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: 0x16db93, // 마우스와 상호작용하는 빛 색상 (현재 사용 중인 민트색)
+        midtoneColor: 0xffffff,   // 중간 톤 색상 (흰색)
+        lowlightColor: 0xf0f0f0,  // 어두운 부분 색상 (밝은 회색)
+        baseColor: 0xffffff,      // 전체 배경 색상 (흰색)
+        blurFactor: 0.60,         // 안개 퍼짐 정도
+        speed: 1.50,              // 움직임 속도
+        zoom: 1.50
+      })
     </script>
   </body>
 </html>
