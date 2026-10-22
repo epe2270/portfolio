@@ -26,7 +26,7 @@
   </head>
 
   <body class="mil-custom-scroll">
-<div id="particles-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; "></div>
+    <div id="particles-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1"></div>
     <!-- frame -->
     <div class="mil-frame">
       <!-- top panel -->
@@ -68,7 +68,6 @@
     <div class="mil-onepage">
       <!-- banner -->
       <div class="mil-section mil-banner mil-banner-right">
-        
         <div class="container-full">
           <div class="row no-gutters align-items-center justify-content-between">
             <div class="scroll_wrap">
@@ -473,20 +472,20 @@
 
     <!-- hworks js -->
     <script src="js/main.js"></script>
-<!-- 여기서부터 파티클 JS 추가 -->
+    <!-- 여기서부터 파티클 JS 추가 -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
       particlesJS("particles-bg", {
-        "particles": {
-          "number": { "value": 80 },
-          "color": { "value": "#ffffff" },
-          "shape": { "type": "circle" },
-          "size": { "value": 3 },
-          "move": { "enable": true, "speed": 2 }
+        particles: {
+          number: { value: 80 },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          size: { value: 3 },
+          move: { enable: true, speed: 2 },
         },
-        "interactivity": {
-          "events": { "onhover": { "enable": true, "mode": "repulse" } }
-        }
+        interactivity: {
+          events: { onhover: { enable: true, mode: "repulse" } },
+        },
       });
     </script>
   </body>
