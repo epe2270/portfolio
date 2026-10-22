@@ -487,13 +487,16 @@
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        highlightColor: 0xffffff, // 마우스와 상호작용하는 빛 색상 (현재 사용 중인 민트색)
-        midtoneColor: 0xffffff,   // 중간 톤 색상 (흰색)
-        lowlightColor: 0xe7e7e7,  // 어두운 부분 색상 (밝은 회색)
-        baseColor: 0xffffff,      // 전체 배경 색상 (흰색)
-        blurFactor: 0.60,         // 안개 퍼짐 정도
-        speed: 1.50,              // 움직임 속도
-        zoom: 1.50
+       /* 색상 설정 */
+        highlightColor: 0x16db93, // 기존 민트색 포인트 (마우스 주변에 살짝 감돎)
+        midtoneColor: 0xe7e7e7,   // 말씀하신 연한 회색 (주된 안개 색상)
+        lowlightColor: 0x5f5f5f,  // 말씀하신 짙은 회색 (안개의 깊이감 부여)
+        baseColor: 0xffffff,      // 바탕색은 흰색으로 유지하여 깔끔함 강조
+        
+        /* 은은함을 결정하는 핵심 옵션 */
+        blurFactor: 0.85,         // 퍼짐 정도 (기본값보다 높여서 경계를 아주 부드럽게 뭉갬)
+        speed: 0.60,              // 움직임 속도 (느리게 설정하여 우아하게 일렁이도록 함)
+        zoom: 2.00                // 화면 확대 (안개 입자를 크게 확대한 것처럼 보여 시선 분산 방지)
       })
     </script>
   </body>
