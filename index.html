@@ -474,18 +474,53 @@
     <script src="js/main.js"></script>
     <!-- 여기서부터 파티클 JS 추가 -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
+<script>
       particlesJS("particles-bg", {
-        particles: {
-          number: { value: 80 },
-          color: { value: "#09eab3" },
-          shape: { type: "circle" },
-          size: { value: 3 },
-          move: { enable: true, speed: 2 },
+        "particles": {
+          "number": { 
+            "value": 60 /* 파티클 개수 (너무 복잡하지 않게 조절) */
+          },
+          "color": { 
+            "value": "#16db93" /* 현재 사용 중인 포인트 컬러(민트색) 입력 */ 
+          },
+          "shape": { 
+            "type": "circle" 
+          },
+          "opacity": {
+            "value": 0.3, /* 투명도 0.0 ~ 1.0 (이 값을 낮추면 연해집니다) */
+            "random": true
+          },
+          "size": { 
+            "value": 2.5, /* 파티클 크기 (기존 3에서 약간 줄임) */
+            "random": true
+          },
+          "line_linked": {
+            "enable": false /* 파티클끼리 선으로 연결할지 여부 (원하면 true) */
+          },
+          "move": { 
+            "enable": true, 
+            "speed": 1 /* 움직임 속도 (은은하게 1로 낮춤) */
+          }
         },
-        interactivity: {
-          events: { onhover: { enable: true, mode: "repulse" } },
-        },
+        "interactivity": {
+          "detect_on": "window", /* ★ 핵심: 배경에 있어도 화면 전체에서 마우스 움직임을 감지함 */
+          "events": { 
+            "onhover": { 
+              "enable": true, 
+              "mode": "repulse" /* 마우스를 피하는 효과 */
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push" /* 클릭 시 파티클 추가 효과 */
+            }
+          },
+          "modes": {
+            "repulse": { 
+              "distance": 80, /* 마우스를 피하는 거리 (수치가 클수록 멀리 도망감) */
+              "duration": 0.4 
+            }
+          }
+        }
       });
     </script>
   </body>
