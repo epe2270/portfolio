@@ -92,13 +92,14 @@ h2 {
 }
 
 h3 {
-  line-height: 100%;
+  line-height: 130%;
   font-size: 40px;
   /* text-shadow: 5px 5px 0px rgba(16, 16, 16, 0.18); */
 }
 @media screen and (max-width: 1400px) {
   h3 {
     font-size: 30px;
+    line-height:130%;
   }
 }
 @media screen and (max-width: 992px) {
