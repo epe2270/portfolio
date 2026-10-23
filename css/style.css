@@ -1895,7 +1895,6 @@ blog
 .mil-filter ul li a {
   text-decoration: none;
   cursor: pointer;
-
   height: 60px;
   border: solid 2px #101010;
   font-weight: 600;
@@ -1956,9 +1955,11 @@ blog
   .mil-filter ul li:last-child {
     margin-right:0;
   }
-  
+  .mil-filter ul li:last-child a{
+    padding:0;
+  }
   .mil-filter ul li a {
-    padding: 0 20px;
+    padding-right:10px;
     box-shadow: none;
      
     border:none;
