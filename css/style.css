@@ -1825,7 +1825,7 @@ blog
   align-items: flex-start;
   flex-direction:column;
   position:relative;
-  margin-left:20px;
+  padding-left:20px;
   
   
 }
@@ -1839,6 +1839,8 @@ blog
   border-radius: 50%;
   background-color: #09eab3;
   margin-right: 15px;
+  top:8px;
+  left:8px;
 }
 }
 
