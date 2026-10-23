@@ -1525,9 +1525,7 @@ iconbox
   text-decoration: none;
   color: #101010;
 }
-.mil-icon-box a:hover{
-  color:#fff;
-}
+
 .mil-icon-box .mil-text-icon {
   position: relative;
   width: 70px;
@@ -1540,10 +1538,7 @@ iconbox
   font-size: 32px;
   padding-bottom: 5px;
 }
-.mil-icon-box .mil-text-icon:hover{
-  background-color:#09eab3;
-  
-}
+
 .mil-icon-box .mil-text-icon::before,
 .mil-icon-box .mil-text-icon::after {
   content: "";
