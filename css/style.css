@@ -1530,7 +1530,7 @@ iconbox
   width: 70px;
   height: 70px;
   border: solid 2px #101010;
-  background-color:#fff
+  background-color:#fff;
   display: flex;
   justify-content: center;
   align-items: center;
