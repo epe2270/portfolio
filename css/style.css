@@ -1824,14 +1824,12 @@ blog
   .mil-text-list li {
   align-items: flex-start;
   flex-direction:column;
-  position:relative
+  position:relative;
+  margin-left:20px;
   
   
 }
-.mil-text-list li span{
- margin-left:20px;
- 
-}
+
 .mil-text-list li:before {
   content: "";
   display: block;
