@@ -2034,6 +2034,10 @@ blog
   .mil-pagination-panel .mil-pagination-numbers {
     margin-bottom: 15px;
   }
+    .mil-portfolio-grid .grid-sizer,
+  .mil-portfolio-grid .mil-grid-item {
+    width: 100%;
+  }
 }
 
 .mil-publication {
