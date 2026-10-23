@@ -2490,7 +2490,39 @@ portfolio
   transform: translateY(10px) scale(0.6);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
-
+.mil-project-img .mil-cover .mil-hover-link:hover {
+  box-shadow: 0 0 0 0 rgba(16, 16, 16, 0.18);
+}
+.mil-project-img.mil-square-item {
+  width: 100%;
+}
+.mil-project-img.mil-square-item .mil-cover {
+  padding-bottom: 100%;
+}
+.mil-project-img.mil-long-item {
+  width: 100%;
+}
+.mil-project-img.mil-long-item .mil-cover {
+  padding-bottom: 140%;
+}
+.mil-project-img .mil-project-descr {
+  padding-top: 35px;
+  text-align: center;
+}
+.mil-project-img:hover .mil-cover::after {
+  transform: scale(0.96);
+}
+.mil-project-img:hover .mil-cover img {
+  transform: scale(0.93);
+}
+.mil-project-img:hover .mil-cover .mil-hover-link {
+  opacity: 1;
+}
+.mil-project-img:hover .mil-cover .mil-hover-link svg,
+.mil-project-img:hover .mil-cover .mil-hover-link i {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
 
 
 
