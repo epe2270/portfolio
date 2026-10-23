@@ -2434,6 +2434,14 @@ portfolio
   width: 100%;
   position: relative;
 }
+.mil-project-img a{
+  
+  display: block;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+
+}
 .mil-project-img img {
   position: absolute;
   top: 0;
