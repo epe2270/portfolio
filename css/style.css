@@ -2338,7 +2338,7 @@ portfolio
 @media screen and (max-width: 992px) {
   .mil-portfolio-grid .grid-sizer,
   .mil-portfolio-grid .mil-grid-item {
-    width: 100%;
+    width: 50%;
   }
 }
 
