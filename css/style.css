@@ -1537,6 +1537,10 @@ iconbox
   font-size: 32px;
   padding-bottom: 5px;
 }
+.mil-icon-box .mil-text-icon:hover{
+  background-color:#09eab3;
+  color:#fff;
+}
 .mil-icon-box .mil-text-icon::before,
 .mil-icon-box .mil-text-icon::after {
   content: "";
@@ -1558,7 +1562,7 @@ iconbox
   background:
     linear-gradient(90deg, rgb(255, 255, 255) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center/var(--dot-space) var(--dot-space),
     linear-gradient(rgb(255, 255, 255) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center/var(--dot-space) var(--dot-space),
-    #101010;
+    #09eab3;
   opacity: 0.3;
 }
 .mil-icon-box .mil-text-icon.no-textured::after {
