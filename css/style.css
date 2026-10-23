@@ -74,9 +74,15 @@ h2 {
   font-size: 58px;
   /* text-shadow: 5px 5px 0px rgba(16, 16, 16, 0.18); */
 }
+  .mil-top-banner .ct-text {
+    font-size: 28px;
+  }
 @media screen and (max-width: 1400px) {
   h2 {
     font-size: 48px;
+  }
+  .mil-top-banner .ct-text {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -86,6 +92,9 @@ h2 {
   h2 {
     font-size: 32px;
     line-height: 130%;
+  }
+    .mil-top-banner .ct-text {
+    font-size: 18px;
   }
 }
 
