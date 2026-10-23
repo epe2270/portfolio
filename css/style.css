@@ -68,11 +68,6 @@ h1 {
   font-size: 80px;
   text-shadow: 5px 5px 0px rgba(16, 16, 16, 0.18);
 }
-@media screen and (max-width: 992px) {
-  h1 {
-    font-size: 40px;
-  }
-}
 
 h2 {
   line-height: 130%;
@@ -83,14 +78,15 @@ h2 {
   h2 {
     font-size: 48px;
   }
-
 }
 @media screen and (max-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
   h2 {
     font-size: 32px;
-    line-height:130%;
+    line-height: 130%;
   }
-
 }
 
 h3 {
@@ -101,7 +97,7 @@ h3 {
 @media screen and (max-width: 1400px) {
   h3 {
     font-size: 30px;
-    line-height:130%;
+    line-height: 130%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -250,8 +246,8 @@ h4 {
   margin-bottom: 10px;
   color: #5f5f5f;
 }
-.mil-text-list li span{
- width:140px;
+.mil-text-list li span {
+  width: 140px;
 }
 .mil-text-list li:before {
   content: "";
@@ -1152,125 +1148,123 @@ scroll
 
 --------------------------------------------------*/
 .scroll_wrap {
-    position: absolute;
-    
-    left:50%;
-    transform: translate(-50%,0);
-    bottom:50px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  position: absolute;
 
-
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 a.scroll_down {
-    color: #5f5f5f;
-    font-size: 18px;
-    opacity: 0.5;
+  color: #5f5f5f;
+  font-size: 18px;
+  opacity: 0.5;
 }
 
 a.scroll_down:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 a.scroll_down span {
-    position: absolute;
-    bottom: 70px;
-    left: 50%;
-    width: 30px;
-    height: 50px;
-    margin-left: -15px;
-    border: 2px solid #5f5f5f;
-    border-radius: 50px;
-    box-sizing: border-box;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #5f5f5f;
+  border-radius: 50px;
+  box-sizing: border-box;
 }
 
 a.scroll_down span::before {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    content: '';
-    width: 6px;
-    height: 6px;
-    margin-left: -3px;
-    background-color: #5f5f5f;
-    border-radius: 100%;
-    -webkit-animation: sdb 2s infinite;
-    animation: sdb 2s infinite;
-    box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #5f5f5f;
+  border-radius: 100%;
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
 }
 
 a.scroll_down span::after {
-    position: absolute;
-    bottom: -18px;
-    left: 50%;
-    width: 18px;
-    height: 18px;
-    content: '';
-    margin-left: -9px;
-    border-left: 1px solid #5f5f5f;
-    border-bottom: 1px solid #5f5f5f;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  content: "";
+  margin-left: -9px;
+  border-left: 1px solid #5f5f5f;
+  border-bottom: 1px solid #5f5f5f;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes sdb {
-    0% {
-        -webkit-transform: translate(0, 0);
-        opacity: 0;
-    }
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
 
-    40% {
-        opacity: 1;
-    }
+  40% {
+    opacity: 1;
+  }
 
-    80% {
-        -webkit-transform: translate(0, 20px);
-        opacity: 0;
-    }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes sdb {
-    0% {
-        transform: translate(0, 0);
-        opacity: 0;
-    }
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
 
-    40% {
-        opacity: 1;
-    }
+  40% {
+    opacity: 1;
+  }
 
-    80% {
-        transform: translate(0, 20px);
-        opacity: 0;
-    }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 .mil-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    /* 버튼 크기, 배경색, 글자색 등 디자인 스타일 추가 */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  /* 버튼 크기, 배경색, 글자색 등 디자인 스타일 추가 */
 }
 
 .mil-to-top.mil-visible {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 /* -------------------------------------------
 
@@ -1300,7 +1294,7 @@ footer
   .mil-footer {
     display: none;
   }
-  .scroll_wrap{
+  .scroll_wrap {
     display: none;
   }
 }
@@ -1534,7 +1528,7 @@ iconbox
   width: 70px;
   height: 70px;
   border: solid 2px #101010;
-  background-color:#fff;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1677,8 +1671,8 @@ experience
   box-shadow: 6px 6px 0 0 rgba(16, 16, 16, 0.18);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
-.mil-to-top{
-    cursor: pointer;
+.mil-to-top {
+  cursor: pointer;
   width: 60px;
   height: 60px;
   border: solid 2px #101010;
@@ -1698,13 +1692,13 @@ experience
 .mil-slider-nav .mil-next:hover {
   box-shadow: 0px 0px 0 0 rgba(16, 16, 16, 0.18);
 }
-.mil-to-top:hover{
- box-shadow: 0px 0px 0 0 rgba(16, 16, 16, 0.18);
+.mil-to-top:hover {
+  box-shadow: 0px 0px 0 0 rgba(16, 16, 16, 0.18);
 }
 .mil-slider-nav .mil-prev {
   margin-right: 15px;
 }
-.mil-to-top svg{
+.mil-to-top svg {
   transform: rotate(-90deg);
 }
 .mil-slider-nav .mil-prev svg {
@@ -1830,26 +1824,24 @@ blog
     padding-bottom: 100%;
   }
   .mil-text-list li {
-  align-items: flex-start;
-  flex-direction:column;
-  position:relative;
-  padding-left:20px;
-  
-  
-}
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    padding-left: 20px;
+  }
 
-.mil-text-list li:before {
-  content: "";
-  display: block;
-  position:absolute;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #09eab3;
-  margin-right: 15px;
-  top:10px;
-  left:6px;
-}
+  .mil-text-list li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #09eab3;
+    margin-right: 15px;
+    top: 10px;
+    left: 6px;
+  }
 }
 
 .mil-filter {
@@ -1880,7 +1872,6 @@ blog
   align-items: center;
 }
 .mil-filter-counter {
-  
   display: flex;
   justify-content: flex-end;
   margin-bottom: 30px;
@@ -1902,7 +1893,7 @@ blog
 }
 .mil-filter ul li a {
   text-decoration: none;
-  background-color:#fff;
+  background-color: #fff;
   cursor: pointer;
   height: 60px;
   border: solid 2px #101010;
@@ -1949,32 +1940,32 @@ blog
   .mil-filter .mil-filter-wrap {
     flex-direction: column;
   }
-  
+
   .mil-filter ul {
-    padding:0;
+    padding: 0;
     width: 100%;
     justify-content: center;
   }
-  
+
   .mil-filter ul li {
     height: auto;
     margin-right: 0;
     margin-bottom: 15px;
   }
   .mil-filter ul li:last-child {
-    margin-right:0;
+    margin-right: 0;
   }
 
   .mil-filter ul li a {
-    padding:0 15px;
+    padding: 0 15px;
     box-shadow: none;
-     
-    border:none;
+
+    border: none;
   }
-  .mil-filter ul li a.mil-current{
-    background-color:#fff;
+  .mil-filter ul li a.mil-current {
+    background-color: #fff;
     border-color: #fff;
-    color:#09eab3;
+    color: #09eab3;
   }
   .mil-filter ul li a.mil-current:after {
     display: none;
@@ -2031,13 +2022,11 @@ blog
 }
 @media screen and (max-width: 767px) {
   .mil-pagination-panel {
-    
     align-items: center;
   }
   .mil-pagination-panel .mil-pagination-numbers {
     margin-bottom: 15px;
   }
-
 }
 
 .mil-publication {
@@ -2436,13 +2425,11 @@ portfolio
   width: 100%;
   position: relative;
 }
-.mil-project-img a{
-  
+.mil-project-img a {
   display: block;
   cursor: pointer;
   color: inherit;
   text-decoration: none;
-
 }
 .mil-project-img img {
   position: absolute;
@@ -2469,7 +2456,7 @@ portfolio
   object-position: center;
   transform: scale(1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-  border:1px solid #eee;
+  border: 1px solid #eee;
 }
 .mil-project-img .mil-cover .mil-hover-link {
   opacity: 0;
@@ -2527,10 +2514,6 @@ portfolio
   transform: translateY(0) scale(1);
 }
 
-
-
-
-
 /* -------------------------------------------
 
 contact
@@ -2540,7 +2523,7 @@ contact
   position: relative;
   padding: 30px;
   border: solid 2px #101010;
-  background-color:#fff
+  background-color: #fff;
 }
 .mil-contact-card::before {
   content: "";
