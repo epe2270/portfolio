@@ -58,7 +58,7 @@ body:after {
   background-image: url(../img/bg.png);
   opacity: 0.06;
 }
-.mil-top-banner p{
+.mil-top-banner p span{
   font-size:28px;
 }
 p {
