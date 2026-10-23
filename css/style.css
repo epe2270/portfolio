@@ -1896,6 +1896,7 @@ blog
 }
 .mil-filter ul li a {
   text-decoration: none;
+  background-color:#fff;
   cursor: pointer;
   height: 60px;
   border: solid 2px #101010;
@@ -2455,6 +2456,7 @@ contact
   position: relative;
   padding: 30px;
   border: solid 2px #101010;
+  background-color:#fff
 }
 .mil-contact-card::before {
   content: "";
