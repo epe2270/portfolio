@@ -1829,7 +1829,8 @@ blog
   
 }
 .mil-text-list li span{
- width:140px;
+ margin-left:20px;
+ 
 }
 .mil-text-list li:before {
   content: "";
