@@ -2034,10 +2034,7 @@ blog
   .mil-pagination-panel .mil-pagination-numbers {
     margin-bottom: 15px;
   }
-    .mil-portfolio-grid .grid-sizer,
-  .mil-portfolio-grid .mil-grid-item {
-    width: 100%;
-  }
+
 }
 
 .mil-publication {
@@ -2576,4 +2573,10 @@ contact
 }
 .mil-contact-card a:hover {
   color: #09eab3;
+}
+@media screen and (max-width: 768px) {
+  .mil-portfolio-grid .grid-sizer,
+  .mil-portfolio-grid .mil-grid-item {
+    width: 100%;
+  }
 }
