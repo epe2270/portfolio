@@ -1831,8 +1831,13 @@ blog
  width:140px;
 }
 .mil-text-list li:before {
-  display: none;
-  
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #09eab3;
+  margin-right: 15px;
 }
 }
 
