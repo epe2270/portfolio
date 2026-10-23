@@ -83,12 +83,18 @@ h2 {
   h2 {
     font-size: 48px;
   }
+  .mil-top-banner p{
+  font-size:24px;
+}
 }
 @media screen and (max-width: 992px) {
   h2 {
     font-size: 32px;
     line-height:130%;
   }
+  .mil-top-banner p{
+  font-size:16px;
+}
 }
 
 h3 {
@@ -1369,6 +1375,9 @@ banner
 .mil-top-banner {
   padding-top: 200px;
   padding-bottom: 100px;
+}
+.mil-top-banner p{
+  font-size:28px;
 }
 @media screen and (max-width: 1200px) {
   .mil-top-banner {
