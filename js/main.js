@@ -7,7 +7,7 @@ $(function () {
     $(window).on("scroll", function () {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 30) {
+        if (scroll >= 20) {
             $(".mil-top-panel").addClass("mil-active");
 
             if (!$('body').hasClass('mil-custom-scroll')) {
