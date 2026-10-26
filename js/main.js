@@ -8,7 +8,11 @@ $(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 30) {
-            $(".mil-top-panel").addClass("mil-active mil-tp-inner");
+            $(".mil-top-panel").addClass("mil-active");
+
+            if (!$('body').hasClass('mil-custom-scroll')) {
+            $(".mil-top-panel").addClass("mil-tp-inner");
+            }
         } else {
             $(".mil-top-panel").removeClass("mil-active mil-tp-inner");
         }
