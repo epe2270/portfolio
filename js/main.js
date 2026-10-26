@@ -9,8 +9,10 @@ $(function () {
 
         if (scroll >= 30) {
             $(".mil-top-panel").addClass("mil-active");
+            $(".mil-top-panel").addClass("mil-tp-2");
         } else {
             $(".mil-top-panel").removeClass("mil-active");
+            $(".mil-top-panel").removeClass("mil-tp-2");
         }
     });
 
